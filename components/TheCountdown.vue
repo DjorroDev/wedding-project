@@ -22,7 +22,7 @@ onMounted(() => {
 
 
 <template>
-     <ul class=" flex justify-center h-96 flex-wrap font-thin font-mono items-center gap-8 text-3xl">
+     <ul class=" flex justify-center h-96 flex-wrap font-thin font-heading items-center gap-8 text-3xl">
         <li>
           <span class="block">{{days}}</span>
           HARI

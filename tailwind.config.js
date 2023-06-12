@@ -10,7 +10,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      script: ["Alex brush", "script"],
+      heading: ["Cinzel", "sans-serif"],
+      desc: ["Fauna One", "sans-serif"],
+    },
   },
   plugins: [],
-}
-
+};
