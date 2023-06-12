@@ -2,7 +2,7 @@
   <!-- <TheNavbar/> -->
   <TheMusicPlayer/>
   <section>
-    <section class="w-full h-screen bg-center bg-cover fixed -z-50" style="background-image: url('https://a.storyblok.com/f/188427/4000x6000/218141d423/gallery11.jpg/m/filters:format(webp)');">
+    <section class="w-full h-screen bg-center bg-cover fixed -z-50" style="background-image: url('https://a.storyblok.com/f/188427/4000x6000/3dda4448a9/gallery12.jpg/m/filters:format(webp)');">
       <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
           <div class="container px-4 mx-auto max-w-4xl text-center relative">
               <h2 class="text-4xl lg:text-5xl font-bold font-heading text-[#f1d6ab]">The Wedding of</h2>
@@ -85,7 +85,7 @@
             height="450"
             style="border:0;"
             allowfullscreen="false"
-            loading="lazy"
+            loading="eager"
             referrerpolicy="no-referrer-when-downgrade"
             class="w-auto"
             >
