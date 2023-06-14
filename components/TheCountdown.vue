@@ -4,7 +4,7 @@ const targetDate = new Date(2023, 8, 31)
 
 const currentTime = ref(new Date())
 
-console.log(targetDate - currentTime.value)
+// console.log(targetDate - currentTime.value)
 
 const days = computed(() => Math.floor((targetDate - currentTime.value) / (1000 * 60 * 60 * 24)))
 const hours = computed(() => Math.floor((targetDate - currentTime.value) / (1000 * 60 * 60) % 24))
