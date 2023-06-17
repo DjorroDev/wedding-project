@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   modules: ["nuxt-swiper", "@nuxt/image-edge", "nuxt-icon", "nuxt-headlessui"],
 
   runtimeConfig: {
-    baseURL: process.env.NUXT_APP_BASE_URL,
     public: {
       apiKey: process.env.NUXT_FB_API_KEY,
       authDomain: process.env.NUXT_FB_AUTH_DOMAIN,
