@@ -50,4 +50,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  nitro: {
+    serveStatic: true,
+  },
 });
