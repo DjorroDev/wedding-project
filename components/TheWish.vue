@@ -84,8 +84,11 @@ const loadMore = async () => {
 </script>
 
 <template>
-  <section class="py-10 h-auto bg-[#2b2b28] text-[#f1d6ab]">
-    <div class="max-w-4xl container mx-auto flex justify-center flex-col items-center">
+  <section class="py-10 h-auto bg-[#f1d6ab] text-black">
+    <div
+      v-motion-custom
+      class="max-w-4xl container mx-auto flex justify-center flex-col items-center"
+    >
       <h2 class="text-6xl mb-5 text-center font-script">Make a Wish</h2>
       <p class="text-center px-4 font-desc">
         It is an honor and pleasure for us, if you can attend and give us your blessing
@@ -97,7 +100,7 @@ const loadMore = async () => {
           <p v-if="error" class="p-2 text-start text-red-500 mb-3 bg-red-50 max-w-fit font-bold">
             {{ error }}
           </p>
-          <label class="text-[#f1d6ab] text-xl" for="">Your Name</label>
+          <label class="text-black text-xl" for="">Your Name</label>
           <input
             v-model="newWish.name"
             class="h-12 p-3 font-desc rounded"
@@ -106,7 +109,7 @@ const loadMore = async () => {
           />
         </div>
         <div class="flex flex-col gap-3">
-          <label class="text-[#f1d6ab] text-xl" for="">Your Wish</label>
+          <label class="text-black text-xl" for="">Your Wish</label>
           <textarea
             v-model="newWish.wish"
             class="h-40 font-desc p-3 rounded"
@@ -118,7 +121,7 @@ const loadMore = async () => {
         <div class="flex items-center gap-4">
           <button
             @click="submitWish()"
-            class="px-1 py-3 bg-[#f1d6ab] w-32 rounded font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
+            class="px-1 py-3 bg-black text-white w-32 rounded font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
           >
             Submit
           </button>
@@ -129,14 +132,14 @@ const loadMore = async () => {
         </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 w-full gap-4 px-4 sm:px-2">
+      <div class="grid grid-cols-1 sm:grid-cols-2 w-full gap-10 px-4 sm:px-2">
         <TheWishCard v-for="(wish, index) in wishes" :key="index" :data="wish" />
       </div>
 
       <button
         v-if="!allDataLoaded"
         @click="loadMore()"
-        class="px-3 py-3 mt-10 bg-[#f1d6ab] rounded text-black font-heading font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
+        class="px-3 py-3 mt-10 bg-black rounded text-white font-heading font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
       >
         Load More
       </button>

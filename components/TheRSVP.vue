@@ -49,7 +49,7 @@ const submitHandler = async () => {
 
 <template>
   <div
-    class="container max-w-4xl px-8 py-10 text-center text-[#f1d6ab] bg-[#2b2b28] mx-4 rounded-2xl h-5/6 my-auto font-desc"
+    class="container max-w-4xl px-8 py-10 text-center text-[#2b2b28] bg-[#f1d6ab] mx-4 rounded-2xl h-5/6 my-auto font-desc"
   >
     <h2 class="text-5xl mb-10 font-script">Konfirmasi Kehadiran</h2>
     <p v-if="error" class="p-2 text-start text-red-500 mb-3 bg-red-50 max-w-fit font-bold">
@@ -102,7 +102,7 @@ const submitHandler = async () => {
 
       <button
         @click="submitHandler"
-        class="px-1 py-3 my-10 bg-[#f1d6ab] w-32 text-[#2b2b28] rounded font-heading font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
+        class="px-1 py-3 my-10 bg-[#2b2b28] w-32 text-[#f1d6ab] rounded font-heading font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
       >
         Submit
       </button>
