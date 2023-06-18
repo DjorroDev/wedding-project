@@ -2,13 +2,9 @@
 const isShow = ref(true);
 
 const route = useRoute();
-const namaTamu = route.query.kpd ? route.query.kpd : "Tamu";
+const namaTamu = route.query.to ? route.query.to : "Tamu";
 
 const config = useRuntimeConfig();
-
-// Access baseURL universally
-const baseURL = config.app.baseURL;
-console.log(baseURL);
 
 // Showing the invitation
 onMounted(() => {
@@ -128,14 +124,14 @@ useHead({
       </div>
     </section> -->
     <!-- Mempelai -->
-    <section class="flex flex-col h-auto py-10 bg-[#fffcfc] px-2 text-[#2b2b28]">
+    <section class="flex flex-col h-auto py-10 bg-light px-2 text-[#2b2b28]">
       <div v-motion-custom class="container mx-auto text-center">
         <h2 class="text-7xl mb-10 font-script font-medium">The Beloved</h2>
       </div>
       <div class="container mx-auto">
         <div v-motion-custom class="flex flex-col relative items-end my-10 mb-20">
-          <div class="absolute right-14 -top-12 -z-8 w-64 h-80 bg-[#f1d6ab]">
-            <h2 class="text-[#2b2b28] font-heading mt-2 ml-3 text-3xl font-bold">The Bride</h2>
+          <div class="absolute right-14 p-4 -top-16 -z-8 w-64 h-80 bg-[#F9D6AC]">
+            <h2 class="text-[#2b2b28] font-heading text-4xl font-bold">The Bride</h2>
           </div>
           <img class="w-64 h-auto z-10" src="/DSC08625.jpg" />
           <!-- <NuxtImg
@@ -143,20 +139,20 @@ useHead({
             class="w-64 h-80 object-top object-cover z-10"
             src="https://a.storyblok.com/f/188427/3376x6000/8bccd53840/dafara.JPG"
           /> -->
-          <h2 class="text-5xl my-1 font-heading">Bang Dap</h2>
+          <h2 class="text-4xl my-1 font-heading">Bang Dap</h2>
           <p class="w-2/3 text-end font-desc">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
             voluptatum!
           </p>
         </div>
         <div v-motion-custom class="relative flex flex-col items-start my-10">
-          <div class="absolute left-14 -top-12 z-0 w-64 h-80 bg-[#f1d6ab]">
-            <h2 class="flex justify-end text-[#2b2b28] font-heading mt-2 mr-3 text-3xl font-bold">
+          <div class="absolute left-14 p-4 -top-16 z-0 w-64 h-80 bg-[#F9D6AC]">
+            <h2 class="flex justify-end text-[#2b2b28] font-heading text-4xl font-bold">
               The Groom
             </h2>
           </div>
           <img class="w-64 z-10 h-auto" src="/DSC08506.jpg" />
-          <h2 class="text-5xl my-1 font-heading">Ci Micel</h2>
+          <h2 class="text-4xl my-1 font-heading">Ci Micel</h2>
           <p class="w-2/3 font-desc">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
             voluptatum!
@@ -165,22 +161,23 @@ useHead({
       </div>
     </section>
     <!-- Gallery -->
-    <section class="flex flex-col px-8 h-auto bg-[#f1d6ab] py-10">
+    <section class="flex flex-col px-8 h-auto bg-[#F9D6AC] py-10">
       <div class="container h-auto max-w-lg mx-auto text-center">
         <h2 class="text-7xl mb-10 font-script text-[#2b2b28]">Glimpse of Us</h2>
         <TheGallery />
       </div>
     </section>
     <!-- Countdown -->
-    <section class="flex justify-center h-auto bg-[#ffff] text-[#2b2b28]">
+    <section class="flex justify-center h-auto bg-light text-[#2b2b28]">
       <div v-motion-custom class="container mx-auto text-center">
-        <h2 class="text-6xl my-10 font-script">Countdown Acara</h2>
+        <h2 class="text-6xl my-10 font-script">Countdown To our happy day</h2>
         <TheCountdown />
         <h2 v-motion-custom class="text-6xl my-10 font-script">Timeline</h2>
+        <div>makan makan</div>
       </div>
     </section>
     <!-- Alamat -->
-    <section class="flex justify-center h-auto bg-[#f1d6ab] border-b-2 py-10 border-black">
+    <section class="flex justify-center h-auto bg-[#F9D6AC] py-10 border-black">
       <div class="container max-w-4xl px-2 flex flex-col gap-7 mx-auto text-center">
         <h2 v-motion-custom class="text-6xl mb-10 font-script text-[#2b2b28]">Alamat / Map</h2>
         <p v-motion-custom class="font-desc">
@@ -201,23 +198,35 @@ useHead({
       </div>
     </section>
     <!-- To do Add Livestream -->
-    <section class="flex justify-center h-auto font-desc bg-[#ffff] text-[#f1d6ab]">
-      <div class="container mx-auto text-center">
-        <h2 class="text-6xl my-10 font-serif font-script">Watch Livestream</h2>
-        <div>The Bride POV</div>
-        <div>The Groom POV</div>
-      </div>
-    </section>
+    <TheLive />
+
     <!-- Konfirmasi kehadiran -->
-    <section class="flex justify-center h-auto py-20 bg-white">
+    <section class="flex justify-center h-auto py-20 bg-light">
       <TheRSVP v-motion-custom :name="namaTamu" />
     </section>
     <!-- Make a wish -->
     <TheWish />
     <!-- Minta minta -->
-    <section class="flex justify-center h-auto bg-[#f1d6ab]">
-      <div class="container mx-auto text-center">
-        <h2 class="text-6xl my-10 font-script text-[#2b2b28]">Share Love</h2>
+    <section class="h-auto py-10 bg-light">
+      <div class="flex justify-center gap-10 flex-col items-center container mx-auto text-center">
+        <h2 class="text-6xl -mb-6 font-script text-[#2b2b28]">Share Love</h2>
+        <p class="mb-10 font-desc">
+          Your prayers & blessings at our wedding is enough as a gift, but if you want to give more,
+          we are happy to receive it and it will complement our happiness even more
+        </p>
+        <div class="w-72 h-96 p-5 bg-cream font-bold rounded-lg font-heading">
+          <h3>BCA</h3>
+          <div class="h-56">QR HERE</div>
+          <p>1010010100</p>
+          <a
+            class="inline-flex mt-2 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
+            href=""
+            >Konfirmasi WA</a
+          >
+        </div>
+        <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
+        <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
+        <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
       </div>
     </section>
   </div>

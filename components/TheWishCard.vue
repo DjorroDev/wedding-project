@@ -19,7 +19,7 @@ defineProps({
         delay: 200,
       },
     }"
-    class="flex overflow-hidden flex-col justify-between py-3 shadow-lg shadow-black px-3 gap-1 min-w-[280px] min-h-[200px] bg-white rounded-md text-[#2b2b28]"
+    class="flex overflow-hidden flex-col justify-between py-3 shadow-md px-3 gap-1 min-w-[280px] min-h-[200px] bg-white rounded-md text-[#2b2b28]"
   >
     <h3 class="font-heading text-3xl">{{ data.name }}</h3>
     <p class="font-desc text-sm text-start">{{ data.wish }}</p>

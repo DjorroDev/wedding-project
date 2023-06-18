@@ -9,7 +9,12 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        light: "#FDF1E3",
+        cream: "#F9D6AC",
+      },
+    },
     fontFamily: {
       script: ["Alex brush", "script"],
       heading: ["Cinzel", "sans-serif"],

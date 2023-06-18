@@ -84,7 +84,7 @@ const loadMore = async () => {
 </script>
 
 <template>
-  <section class="py-10 h-auto bg-[#f1d6ab] text-black">
+  <section class="py-10 h-auto bg-[#F9D6AC] text-black">
     <div
       v-motion-custom
       class="max-w-4xl container mx-auto flex justify-center flex-col items-center"
@@ -121,7 +121,7 @@ const loadMore = async () => {
         <div class="flex items-center gap-4">
           <button
             @click="submitWish()"
-            class="px-1 py-3 bg-black text-white w-32 rounded font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
+            class="px-1 py-3 bg-light text-black shadow-md w-32 rounded font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
           >
             Submit
           </button>
@@ -139,7 +139,7 @@ const loadMore = async () => {
       <button
         v-if="!allDataLoaded"
         @click="loadMore()"
-        class="px-3 py-3 mt-10 bg-black rounded text-white font-heading font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
+        class="px-3 py-3 mt-10 bg-cream rounded-lg border-2 shadow border-gray-800 text-black font-heading font-bold text-xl hover:bg-[#d7be96] active:bg-[#c4ad88]"
       >
         Load More
       </button>

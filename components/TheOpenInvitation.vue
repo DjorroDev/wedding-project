@@ -68,11 +68,11 @@ const motionInstance = useMotion(target, {
         <div class="text-[#f1d6ab] font-desc">
           <p class="text-xl">Dear Mr./ Mrs./ Ms.</p>
           <div class="text-4xl my-2">{{ tamu }}</div>
-          <p>You are cordially invited to our wedding.</p>
+          <p class="mt-4">You are cordially invited to our wedding.</p>
         </div>
         <button
           type="button"
-          class="inline-flex mt-4 justify-center rounded-md border font-heading font-bold border-transparent bg-[#f1d6ab] px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
+          class="inline-flex mt-10 justify-center rounded-md border font-heading font-bold border-transparent bg-[#f1d6ab] px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
           @click="handle"
           emit
         >

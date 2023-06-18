@@ -20,7 +20,7 @@ const isMuted = ref(prop.audio.muted);
   />
   <button
     @click="(prop.audio.muted = !prop.audio.muted), (isMuted = prop.audio.muted)"
-    class="fixed bottom-9 right-7 w-14 h-14 bg-white rounded-full z-20"
+    class="fixed bottom-9 right-7 w-14 h-14 bg-white rounded-full z-20 border-4 border-cream"
   >
     <Icon :name="isMuted ? 'mdi-light:music-off' : 'mdi-light:music'" size="2.5em" />
   </button>
