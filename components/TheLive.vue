@@ -3,7 +3,11 @@
     <div class="container mx-auto text-center">
       <h2 class="text-7xl mt-10 font-serif font-script">Livestream</h2>
       <p class="font-desc mb-10">Watch Livestream on instagram</p>
-      <img class="object-cover my-3 px-3" src="DSC00831.JPG" />
+      <NuxtImg
+        class="object-cover my-3 px-3"
+        format="webp"
+        src="https://a.storyblok.com/f/188427/2909x4363/3690f3504c/dsc00831.JPG"
+      />
       <div class="flex justify-evenly">
         <div>
           <div class="font-heading font-bold">The Bride's ig :</div>
