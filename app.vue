@@ -4,8 +4,6 @@ const isShow = ref(true);
 const route = useRoute();
 const namaTamu = route.query.to ? route.query.to : "Tamu";
 
-const config = useRuntimeConfig();
-
 // Showing the invitation
 onMounted(() => {
   isShow.value = true;
@@ -133,7 +131,7 @@ useHead({
           <div class="absolute right-14 p-4 -top-16 -z-8 w-64 h-80 bg-[#F9D6AC]">
             <h2 class="text-[#2b2b28] font-heading text-4xl font-bold">The Bride</h2>
           </div>
-          <img class="w-64 h-auto z-10" src="/DSC08625.jpg" />
+          <img class="w-64 h-auto z-10" src="/DSC00810.jpg" />
           <!-- <NuxtImg
             subject to be change with thiss
             class="w-64 h-80 object-top object-cover z-10"
@@ -151,7 +149,7 @@ useHead({
               The Groom
             </h2>
           </div>
-          <img class="w-64 z-10 h-auto" src="/DSC08506.jpg" />
+          <img class="w-64 z-10 h-auto" src="/DSC00822.jpg" />
           <h2 class="text-4xl my-1 font-heading">Ci Micel</h2>
           <p class="w-2/3 font-desc">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
