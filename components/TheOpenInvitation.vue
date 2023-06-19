@@ -57,13 +57,13 @@ const motionInstance = useMotion(target, {
   >
     <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
       <div class="container px-4 mx-auto max-w-4xl text-center relative">
-        <h2 class="text-3xl lg:text-5xl font-bold font-heading text-[#f1d6ab]">Wedding Of</h2>
+        <h2 class="text-3xl sm:text-5xl font-bold font-heading text-[#f1d6ab]">Wedding Of</h2>
         <div
           class="flex flex-col first-letter:max-w-3xl my-10 mx-auto font-script text-7xl text-[#f1d6ab]"
         >
           <p class="mr-24">Dafara</p>
           <p class="font-heading text-3xl">&</p>
-          <p class="ml-24">Michele</p>
+          <p class="ml-24">Michelle</p>
         </div>
         <div class="text-[#f1d6ab] font-desc">
           <p class="text-xl">Dear Mr./ Mrs./ Ms.</p>

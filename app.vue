@@ -54,61 +54,67 @@ useHead({
   <TheOpenInvitation :tamu="namaTamu" :isShow="isShow" @change="isShow = false" />
   <!-- <TheNavbar/> -->
   <div v-if="!isShow">
-    <!-- <TheMusicPlayer /> -->
-    <section>
-      <section
-        v-motion
-        :initial="{
-          opacity: 0,
-        }"
-        :enter="{
-          opacity: 1,
-          transition: {
-            type: 'spring',
-            stiffness: 30,
-            mass: 1,
-            delay: 200,
-          },
-        }"
-        class="w-full h-screen bg-center bg-cover -z-50 fixed"
-        style="
-          background-image: url('https://a.storyblok.com/f/188427/4000x6000/3dda4448a9/gallery12.jpg/m/filters:format(webp)');
-        "
+    <section
+      v-motion
+      :initial="{
+        opacity: 0,
+      }"
+      :enter="{
+        opacity: 1,
+        transition: {
+          type: 'spring',
+          stiffness: 30,
+          mass: 1,
+          delay: 200,
+        },
+      }"
+      class="w-full h-screen bg-center bg-cover fixed -z-50"
+      style="
+        background-image: url('https://a.storyblok.com/f/188427/4000x6000/3dda4448a9/gallery12.jpg/m/filters:format(webp)');
+      "
+    >
+      <div
+        class="relative flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12"
       >
-        <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
+        <div
+          v-motion
+          :initial="{
+            opacity: 0,
+            y: 100,
+          }"
+          :enter="{
+            opacity: 1,
+            y: 0,
+            transition: {
+              type: 'spring',
+              stiffness: 30,
+              mass: 1,
+              delay: 200,
+            },
+          }"
+          class="container px-4 mx-auto max-w-4xl text-center relative"
+        >
+          <h2 class="text-4xl -mt-20 lg:text-5xl font-bold font-heading text-[#f1d6ab]">
+            The Wedding of
+          </h2>
           <div
-            v-motion
-            :initial="{
-              opacity: 0,
-              y: 100,
-            }"
-            :enter="{
-              opacity: 1,
-              y: 0,
-              transition: {
-                type: 'spring',
-                stiffness: 30,
-                mass: 1,
-                delay: 200,
-              },
-            }"
-            class="container px-4 mx-auto max-w-4xl text-center relative"
+            class="flex flex-col first-letter:max-w-3xl my-10 mx-auto font-script text-5xl gap-4 text-[#f1d6ab]"
           >
-            <h2 class="text-2xl -mt-20 lg:text-5xl font-bold font-heading text-[#f1d6ab]">
-              The Wedding of
-            </h2>
-            <div
-              class="flex flex-col first-letter:max-w-3xl my-10 mx-auto font-script text-7xl text-[#f1d6ab]"
-            >
-              <p class="mr-24">Dafara</p>
-              <p class="font-heading text-3xl">&</p>
-              <p class="ml-24">Michele</p>
-            </div>
+            <p class="">Dafara Wiyogo Pangestu</p>
+            <p class="font-heading text-4xl">&</p>
+            <p class="">Michele Simadirja</p>
           </div>
+          <h3 class="text-3xl mt-5 font-script text-[#f1d6ab] font-bold">08/07/2023</h3>
         </div>
-      </section>
+        <!-- <p class="absolute bottom-36 font-heading text-cream font-bold text-2xl">scroll</p>
+        <Icon
+          class="absolute bottom-12 text-[#f1d6ab] animate-bounce"
+          size="4em"
+          name="material-symbols:arrow-downward-rounded"
+        /> -->
+      </div>
     </section>
-    <div class="h-screen"></div>
+    <div class="h-screen -z-50"></div>
     <!-- Light -->
     <!-- <section class="flex justify-center h-auto bg-[#f1d6ab]">
       <div class="container mx-auto text-center">
@@ -122,30 +128,28 @@ useHead({
       </div>
     </section> -->
     <!-- Mempelai -->
-    <section class="flex flex-col h-auto py-10 bg-light px-2 text-[#2b2b28]">
+    <section class="relative flex flex-col h-auto py-10 bg-light text-[#2b2b28]">
+      <div class="absolute inset-0 bg-contain bg-[url('flower2.jpg')] opacity-40"></div>
       <div v-motion-custom class="container mx-auto text-center">
-        <h2 class="text-7xl mb-10 font-script font-medium">The Beloved</h2>
+        <h2 class="text-7xl mb-12 font-script font-medium">The Beloved</h2>
       </div>
       <div class="container mx-auto">
         <div v-motion-custom class="flex flex-col relative items-end my-10 mb-20">
-          <div class="absolute right-14 p-4 -top-16 -z-8 w-64 h-80 bg-[#F9D6AC]">
+          <div class="absolute right-14 p-4 -top-16 w-64 h-80 bg-[#F9D6AC]">
             <h2 class="text-[#2b2b28] font-heading text-4xl font-bold">The Bride</h2>
           </div>
           <NuxtImg
             format="webp"
-            class="w-64 h-auto z-10"
+            class="w-64 h-auto z-10 px-2"
             src="https://a.storyblok.com/f/188427/3376x4220/23cc21e1d5/dsc00810.JPG"
           />
-          <!-- <NuxtImg
-            subject to be change with thiss
-            class="w-64 h-80 object-top object-cover z-10"
-            src="https://a.storyblok.com/f/188427/3376x6000/8bccd53840/dafara.JPG"
-          /> -->
-          <h2 class="text-4xl my-1 font-heading">Bang Dap</h2>
-          <p class="w-2/3 text-end font-desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
-            voluptatum!
-          </p>
+          <div class="flex flex-col items-end text-end px-2">
+            <h2 class="text-4xl my-1 font-heading">Dafara Wiyogo Pangestu</h2>
+            <p class="font-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
+              voluptatum!
+            </p>
+          </div>
         </div>
         <div v-motion-custom class="relative flex flex-col items-start my-10">
           <div class="absolute left-14 p-4 -top-16 z-0 w-64 h-80 bg-[#F9D6AC]">
@@ -155,14 +159,16 @@ useHead({
           </div>
           <NuxtImg
             format="webp"
-            class="w-64 z-10 h-auto"
+            class="w-64 z-10 h-auto px-2"
             src="https://a.storyblok.com/f/188427/3376x4220/e67c58c580/dsc00822.JPG"
           />
-          <h2 class="text-4xl my-1 font-heading">Ci Micel</h2>
-          <p class="w-2/3 font-desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
-            voluptatum!
-          </p>
+          <div class="flex flex-col items-start px-2 py-2">
+            <h2 class="text-4xl my-1 font-heading">Michelle Simadirja</h2>
+            <p class="font-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
+              voluptatum!
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -174,21 +180,41 @@ useHead({
       </div>
     </section>
     <!-- Countdown -->
-    <section class="flex justify-center h-auto bg-light text-[#2b2b28]">
-      <div v-motion-custom class="container mx-auto text-center">
-        <h2 class="text-6xl my-10 font-script">Countdown To our happy day</h2>
+    <section class="relative h-auto py-12 bg-light text-[#2b2b28]">
+      <div class="absolute inset-0 bg-contain bg-[url('flower2.jpg')] opacity-25"></div>
+      <div
+        v-motion-custom
+        class="flex flex-col items-center justify-centercontainer mx-auto text-center"
+      >
+        <h2 class="text-6xl font-script">Countdown To our happy day</h2>
         <TheCountdown />
-        <h2 v-motion-custom class="text-6xl my-10 font-script">Timeline</h2>
-        <div>makan makan</div>
+        <h3 v-motion-custom class="text-5xl mb-12 mt-2 font-script">08/07/2023</h3>
+        <!-- <h2 v-motion-custom class="text-6xl font-script">Acara</h2> -->
+        <div
+          class="grid grid-cols-2 grid-rows-1 w-full divide-x-2 divide-[#2b2b28] text-2xl font-heading"
+        >
+          <div v-motion-custom>
+            <h3 class="font-script text-5xl">Akad</h3>
+            <p>09.00 - selesai</p>
+          </div>
+          <!-- <div class="border-r-2 border-black h-full w-1">s</div> -->
+          <div v-motion-custom>
+            <h3 class="font-script text-5xl">Reception</h3>
+            <p>14.00 - 17.30</p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Alamat -->
     <section class="flex justify-center h-auto bg-[#F9D6AC] py-10 border-black">
       <div class="container max-w-4xl px-2 flex flex-col gap-7 mx-auto text-center">
-        <h2 v-motion-custom class="text-6xl mb-10 font-script text-[#2b2b28]">Alamat / Map</h2>
-        <p v-motion-custom class="font-desc">
-          GRAHA SIENA 2 BLOK M17 NO.22, CITRA RAYA, CIAKAR, PANONGAN, KAB. TANGERANG
-        </p>
+        <h2 v-motion-custom class="text-6xl -mb-5 font-script text-[#2b2b28]">Alamat / Map</h2>
+        <div>
+          <p v-motion-custom class="font-desc mb-3">
+            GRAHA SIENA 2 BLOK M17 NO.22, CITRA RAYA, CIAKAR, PANONGAN, KAB. TANGERANG
+          </p>
+          <p v-motion-custom class="font-heading text-2xl">Rumah mempelai wanita</p>
+        </div>
         <iframe
           v-motion-custom
           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d701.0866206010246!2d106.52876074601097!3d-6.270985983280533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTYnMTUuNSJTIDEwNsKwMzEnNDQuMSJF!5e0!3m2!1sen!2sid!4v1686399621811!5m2!1sen!2sid"
@@ -207,33 +233,64 @@ useHead({
     <TheLive />
 
     <!-- Konfirmasi kehadiran -->
-    <section class="flex justify-center h-auto py-20 bg-light">
+    <section class="relative flex justify-center h-auto py-20 bg-light">
+      <div class="absolute inset-0 bg-contain bg-[url('flower2.jpg')] opacity-25"></div>
       <TheRSVP v-motion-custom :name="namaTamu" />
     </section>
     <!-- Make a wish -->
     <TheWish />
     <!-- Minta minta -->
-    <section class="h-auto py-10 bg-light">
+    <section class="relative h-auto py-10 bg-light">
       <div class="flex justify-center gap-10 flex-col items-center container mx-auto text-center">
-        <h2 class="text-6xl -mb-6 font-script text-[#2b2b28]">Share Love</h2>
-        <p class="mb-10 font-desc">
+        <h2 class="text-6xl -mb-6 font-script text-[#2b2b28] z-10">Share Love</h2>
+        <p class="mb-10 font-desc z-10 px-2">
           Your prayers & blessings at our wedding is enough as a gift, but if you want to give more,
           we are happy to receive it and it will complement our happiness even more
         </p>
-        <div class="w-72 h-96 p-5 bg-cream font-bold rounded-lg font-heading">
+        <div class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
           <h3>BCA</h3>
-          <div class="h-56">QR HERE</div>
-          <p>1010010100</p>
+          <img class="w-32 mx-auto my-8" src="logo_bca.png" alt="logo bca" />
+          <div class="">No. rek</div>
+          <p class="text-xl">6790232393</p>
+          <p>a.n Dafara Wiyogo Pangestu</p>
           <a
             class="inline-flex mt-2 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
             href=""
+            target="_blank"
             >Konfirmasi WA</a
           >
         </div>
+        <div class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
+          <h3>BCA</h3>
+          <img class="w-32 mx-auto my-8" src="logo_bca.png" alt="logo bca" />
+          <div class="">No. rek</div>
+          <p class="text-xl">7641759094</p>
+          <p>a.n Michelle Simadirja</p>
+          <a
+            class="inline-flex mt-2 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
+            href=""
+            target="_blank"
+            >Konfirmasi WA</a
+          >
+        </div>
+        <div class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
+          <h3>Dana</h3>
+          <div class="mx-auto w-32 h-32 my-5 bg-white"></div>
+          <p class="text-xl">0812345678</p>
+          <p>a.n Michelle Simadirja</p>
+          <a
+            class="inline-flex mt-2 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
+            href=""
+            target="_blank"
+            >Konfirmasi WA</a
+          >
+        </div>
+        <!-- <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
         <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
-        <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
-        <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
+        <div class="w-72 h-96 bg-cream rounded-lg">bca</div> -->
       </div>
+      <div class="absolute inset-0 bg-contain bg-[url('flower2.jpg')] opacity-30"></div>
     </section>
   </div>
+  <!-- <footer>p</footer> -->
 </template>
