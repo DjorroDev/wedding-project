@@ -249,7 +249,7 @@ useHead({
         </p>
         <div class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
           <h3>BCA</h3>
-          <img class="w-32 mx-auto my-8" src="logo_bca.png" alt="logo bca" />
+          <img class="w-32 mx-auto my-8" src="/logo_bca.png" alt="logo bca" />
           <div class="">No. rek</div>
           <p class="text-xl">6790232393</p>
           <p>a.n Dafara Wiyogo Pangestu</p>
@@ -262,7 +262,7 @@ useHead({
         </div>
         <div class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
           <h3>BCA</h3>
-          <img class="w-32 mx-auto my-8" src="logo_bca.png" alt="logo bca" />
+          <img class="w-32 mx-auto my-8" src="/logo_bca.png" alt="logo bca" />
           <div class="">No. rek</div>
           <p class="text-xl">7641759094</p>
           <p>a.n Michelle Simadirja</p>
