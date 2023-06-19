@@ -129,7 +129,10 @@ useHead({
     </section> -->
     <!-- Mempelai -->
     <section class="relative flex flex-col h-auto py-10 bg-light text-[#2b2b28]">
-      <div class="absolute inset-0 bg-contain bg-[url('flower2.jpg')] opacity-40"></div>
+      <div
+        class="absolute inset-0 bg-contain opacity-40"
+        style="background-image: url('flower2.jpg')"
+      ></div>
       <div v-motion-custom class="container mx-auto text-center">
         <h2 class="text-7xl mb-12 font-script font-medium">The Beloved</h2>
       </div>
@@ -181,7 +184,10 @@ useHead({
     </section>
     <!-- Countdown -->
     <section class="relative h-auto py-12 bg-light text-[#2b2b28]">
-      <div class="absolute inset-0 bg-contain bg-[url('flower2.jpg')] opacity-25"></div>
+      <div
+        class="absolute inset-0 bg-contain opacity-25"
+        style="background-image: url('flower2.jpg')"
+      ></div>
       <div
         v-motion-custom
         class="flex flex-col items-center justify-centercontainer mx-auto text-center"
@@ -234,7 +240,10 @@ useHead({
 
     <!-- Konfirmasi kehadiran -->
     <section class="relative flex justify-center h-auto py-20 bg-light">
-      <div class="absolute inset-0 bg-contain bg-[url('flower2.jpg')] opacity-25"></div>
+      <div
+        class="absolute inset-0 bg-contain opacity-25"
+        style="background-image: url('flower2.jpg')"
+      ></div>
       <TheRSVP v-motion-custom :name="namaTamu" />
     </section>
     <!-- Make a wish -->
@@ -289,7 +298,10 @@ useHead({
         <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
         <div class="w-72 h-96 bg-cream rounded-lg">bca</div> -->
       </div>
-      <div class="absolute inset-0 bg-contain bg-[url('flower2.jpg')] opacity-30"></div>
+      <div
+        class="absolute inset-0 bg-contain opacity-30"
+        style="background-image: url('flower2.jpg')"
+      ></div>
     </section>
   </div>
   <!-- <footer>p</footer> -->
