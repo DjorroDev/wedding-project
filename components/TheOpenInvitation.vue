@@ -1,7 +1,8 @@
 <script setup>
 import { useMotion } from "@vueuse/motion";
 
-// const audio = new Audio("pamungkas-deeper.mp3");
+const audio = new Audio("pamungkas-deeper.mp3");
+const isMuted = ref(audio.muted);
 
 // console.log(audio);
 
@@ -14,7 +15,7 @@ const emit = defineEmits(["change", "changeInvite"]);
 
 const handle = () => {
   motionInstance.leave(() => {
-    // audio.play();
+    audio.play();
     emit("change");
   });
 };
@@ -81,5 +82,19 @@ const motionInstance = useMotion(target, {
       </div>
     </div>
   </section>
-  <TheMusicPlayer v-if="!props.isShow" />
+  <!-- <TheMusicPlayer :audio="audio" v-if="!props.isShow" /> -->
+
+  <!-- Music Handler -->
+  <div v-if="!props.isShow">
+    <div
+      class="fixed bottom-10 right-8 w-12 h-12 bg-white rounded-full z-20"
+      :class="isMuted ? '' : 'animate-ping'"
+    />
+    <button
+      @click="(audio.muted = !audio.muted), (isMuted = audio.muted)"
+      class="fixed bottom-9 right-7 w-14 h-14 bg-white rounded-full z-20 border-4 border-cream"
+    >
+      <Icon :name="isMuted ? 'mdi-light:music-off' : 'mdi-light:music'" size="2.5em" />
+    </button>
+  </div>
 </template>

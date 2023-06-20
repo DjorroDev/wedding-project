@@ -149,8 +149,8 @@ useHead({
           <div class="flex flex-col items-end text-end px-2">
             <h2 class="text-4xl my-1 font-heading">Dafara Wiyogo Pangestu</h2>
             <p class="font-desc text-sm">
-              Lahir di jakarta, 18 juli 1998 (24th). Anak pertama dari Papi Yugo Sapanto (Jhosy) dan
-              Mami Lely Maruliana (Wiwiek)
+              Lahir di jakarta, 18 juli 1998 (24th). Anak pertama dari Papi Yugo Saptanto (Jhosy)
+              dan Mami Lely Maruliana (Wiwiek)
             </p>
           </div>
         </div>
