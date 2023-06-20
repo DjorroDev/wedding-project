@@ -138,8 +138,8 @@ useHead({
       </div>
       <div class="container mx-auto">
         <div v-motion-custom class="flex flex-col relative items-end my-10 mb-20">
-          <div class="absolute right-14 p-4 -top-16 w-64 h-80 bg-[#F9D6AC]">
-            <h2 class="text-[#2b2b28] font-heading text-4xl font-bold">The Groom</h2>
+          <div class="absolute right-14 py-4 pl-3 -top-16 w-64 h-80 bg-[#F9D6AC]">
+            <h2 class="text-[#2b2b28] font-heading text-3xl font-bold">The Groom</h2>
           </div>
           <NuxtImg
             format="webp"
@@ -260,7 +260,7 @@ useHead({
           <h3>BCA</h3>
           <img class="w-32 mx-auto my-8" src="/logo_bca.png" alt="logo bca" />
           <div class="">No. rek</div>
-          <p class="text-xl">6790232393</p>
+          <p class="text-xl">6790232494</p>
           <p>a.n Dafara Wiyogo Pangestu</p>
           <a
             class="inline-flex mt-2 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"

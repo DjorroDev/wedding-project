@@ -1,7 +1,7 @@
 <script setup>
 import { useMotion } from "@vueuse/motion";
 
-const audio = new Audio("pamungkas-deeper.mp3");
+// const audio = new Audio("pamungkas-deeper.mp3");
 
 // console.log(audio);
 
@@ -14,7 +14,7 @@ const emit = defineEmits(["change", "changeInvite"]);
 
 const handle = () => {
   motionInstance.leave(() => {
-    audio.play();
+    // audio.play();
     emit("change");
   });
 };
@@ -81,5 +81,5 @@ const motionInstance = useMotion(target, {
       </div>
     </div>
   </section>
-  <TheMusicPlayer :audio="audio" v-if="!props.isShow" />
+  <TheMusicPlayer v-if="!props.isShow" />
 </template>
