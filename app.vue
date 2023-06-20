@@ -104,7 +104,7 @@ useHead({
             <p class="font-heading text-4xl">&</p>
             <p class="">Michele Simadirja</p>
           </div>
-          <h3 class="text-3xl mt-5 font-script text-[#f1d6ab] font-bold">08/07/2023</h3>
+          <h3 class="text-3xl mt-5 font-script text-[#f1d6ab] font-bold">Sabtu, 08 Juli 2023</h3>
         </div>
         <!-- <p class="absolute bottom-36 font-heading text-cream font-bold text-2xl">scroll</p>
         <Icon
@@ -139,7 +139,7 @@ useHead({
       <div class="container mx-auto">
         <div v-motion-custom class="flex flex-col relative items-end my-10 mb-20">
           <div class="absolute right-14 p-4 -top-16 w-64 h-80 bg-[#F9D6AC]">
-            <h2 class="text-[#2b2b28] font-heading text-4xl font-bold">The Bride</h2>
+            <h2 class="text-[#2b2b28] font-heading text-4xl font-bold">The Groom</h2>
           </div>
           <NuxtImg
             format="webp"
@@ -148,16 +148,16 @@ useHead({
           />
           <div class="flex flex-col items-end text-end px-2">
             <h2 class="text-4xl my-1 font-heading">Dafara Wiyogo Pangestu</h2>
-            <p class="font-desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
-              voluptatum!
+            <p class="font-desc text-sm">
+              Lahir di jakarta, 18 juli 1998 (24th). Anak pertama dari Papi Yugo Sapanto (Jhosy) dan
+              Mami Lely Maruliana (Wiwiek)
             </p>
           </div>
         </div>
         <div v-motion-custom class="relative flex flex-col items-start my-10">
           <div class="absolute left-14 p-4 -top-16 z-0 w-64 h-80 bg-[#F9D6AC]">
             <h2 class="flex justify-end text-[#2b2b28] font-heading text-4xl font-bold">
-              The Groom
+              The Bride
             </h2>
           </div>
           <NuxtImg
@@ -167,9 +167,9 @@ useHead({
           />
           <div class="flex flex-col items-start px-2 py-2">
             <h2 class="text-4xl my-1 font-heading">Michelle Simadirja</h2>
-            <p class="font-desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloribus natus
-              voluptatum!
+            <p class="font-desc text-sm">
+              Lahir di Tangerang, 04 Maret 1998 (25th). Anak pertama dari Papi Dedi Simadirja (Ndet)
+              dan Mami Ismini (Iis)
             </p>
           </div>
         </div>
@@ -194,7 +194,7 @@ useHead({
       >
         <h2 class="text-6xl font-script">Countdown To our happy day</h2>
         <TheCountdown />
-        <h3 v-motion-custom class="text-5xl mb-12 mt-2 font-script">08/07/2023</h3>
+        <h3 v-motion-custom class="text-4xl mb-12 mt-2 font-script">Sabtu, 08 Juli 2023</h3>
         <!-- <h2 v-motion-custom class="text-6xl font-script">Acara</h2> -->
         <div
           class="grid grid-cols-2 grid-rows-1 w-full divide-x-2 divide-[#2b2b28] text-2xl font-heading"
