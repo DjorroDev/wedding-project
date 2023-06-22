@@ -14,8 +14,8 @@ const props = defineProps({
 const emit = defineEmits(["change", "changeInvite"]);
 
 const handle = () => {
+  audio.play();
   motionInstance.leave(() => {
-    audio.play();
     emit("change");
   });
 };
