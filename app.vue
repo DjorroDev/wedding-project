@@ -249,60 +249,66 @@ useHead({
     <!-- Make a wish -->
     <TheWish />
     <!-- Minta minta -->
-    <section class="relative h-auto py-10 bg-light">
+    <section class="relative h-auto py-10 pb-32 bg-light">
       <div class="flex justify-center gap-10 flex-col items-center container mx-auto text-center">
         <h2 class="text-6xl -mb-6 font-script text-[#2b2b28] z-10">Share Love</h2>
         <p class="mb-10 font-desc z-10 px-2">
           Your prayers & blessings at our wedding is enough as a gift, but if you want to give more,
           we are happy to receive it and it will complement our happiness even more
         </p>
-        <div class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
-          <h3>BCA</h3>
-          <img class="w-32 mx-auto my-8" src="/logo_bca.png" alt="logo bca" />
-          <div class="">No. rek</div>
-          <p class="text-xl">6790232494</p>
-          <p>a.n Dafara Wiyogo Pangestu</p>
-          <a
-            class="inline-flex mt-2 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
-            href=""
-            target="_blank"
-            >Konfirmasi WA</a
-          >
-        </div>
-        <div class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
-          <h3>BCA</h3>
-          <img class="w-32 mx-auto my-8" src="/logo_bca.png" alt="logo bca" />
-          <div class="">No. rek</div>
-          <p class="text-xl">7641759094</p>
-          <p>a.n Michelle Simadirja</p>
-          <a
-            class="inline-flex mt-2 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
-            href=""
-            target="_blank"
-            >Konfirmasi WA</a
-          >
-        </div>
-        <div class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
-          <h3>Dana</h3>
-          <div class="mx-auto w-32 h-32 my-5 bg-white"></div>
-          <p class="text-xl">0812345678</p>
-          <p>a.n Michelle Simadirja</p>
-          <a
-            class="inline-flex mt-2 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
-            href=""
-            target="_blank"
-            >Konfirmasi WA</a
-          >
-        </div>
+        <TheCardGift
+          title="BCA"
+          name="a.n Dafara Wiyogo Pangestu"
+          image="/logo_bca.png"
+          rek="6790232494"
+        />
+        <TheCardGift
+          title="BCA"
+          name="a.n Michelle Simadirja"
+          image="/logo_bca.png"
+          rek="7641759094"
+        />
+        <TheCardGift
+          title="Dana"
+          name="a.n Michelle Simadirja"
+          image="/qr/danamicel.jpg"
+          rek="082113718128"
+        />
+        <TheCardGift
+          title="Dana"
+          name="a.n Dafara Wiyogo Pangestu"
+          image="/qr/danadafa.jpg"
+          rek="08974144611"
+        />
+        <TheCardGift
+          title="ShopeePay"
+          name="Michelle Simadirja"
+          image="/qr/shopeemicel.jpg"
+          rek="082113718128"
+        />
+        <TheCardGift
+          title="ShopeePay"
+          name="Dafara Wiyogo Pangestu"
+          image="/qr/shopeedafa.jpg"
+          rek="08974144611"
+        />
+
         <!-- <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
         <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
         <div class="w-72 h-96 bg-cream rounded-lg">bca</div> -->
       </div>
       <div
         class="absolute inset-0 bg-contain opacity-30"
-        style="background-image: url('flower2.jpg')"
+        style="background-image: url('/flower2.jpg')"
       ></div>
     </section>
+    <footer class="px-4 py-10 bg-cream bg-opacity-90 text-[#2b2b28] font-desc">
+      <h2 class="text-lg">Thank You</h2>
+      <h2 class="mb-2 text-sm">For all from both sides of big Family</h2>
+      <p class="border-t pt-2 border-black">
+        Made with <Icon name="material-symbols:favorite" /> by Djorro
+      </p>
+      <p class="text-[8px]">bg & icon by freepik</p>
+    </footer>
   </div>
-  <!-- <footer>p</footer> -->
 </template>
