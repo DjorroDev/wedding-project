@@ -4,6 +4,7 @@ defineProps({
   name: String,
   rek: String,
   image: String,
+  link: String,
 });
 
 const handleCopy = (rek) => {
@@ -14,7 +15,10 @@ const handleCopy = (rek) => {
 <template>
   <div v-motion-custom class="w-72 h-auto p-5 bg-cream font-bold rounded-lg font-heading z-10">
     <h3>{{ title }}</h3>
-    <img class="w-40 mx-auto my-6" :src="image" alt="qr" />
+    <a v-if="link" target="_blank" :href="link">
+      <img class="w-40 mx-auto my-6" :src="image" alt="qr" />
+    </a>
+    <img v-else class="w-40 mx-auto my-6" :src="image" alt="qr" />
     <div class="">No. rek</div>
     <p class="text-xl">{{ rek }}</p>
     <p>{{ name }}</p>

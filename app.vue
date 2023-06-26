@@ -273,24 +273,28 @@ useHead({
           name="a.n Michelle Simadirja"
           image="/qr/danamicel.jpg"
           rek="082113718128"
+          link="https://link.dana.id/qr/4s5gf8z"
         />
         <TheCardGift
           title="Dana"
           name="a.n Dafara Wiyogo Pangestu"
           image="/qr/danadafa.jpg"
           rek="08974144611"
+          link="https://link.dana.id/qr/v4uo6ag"
         />
         <TheCardGift
           title="ShopeePay"
           name="Michelle Simadirja"
           image="/qr/shopeemicel.jpg"
           rek="082113718128"
+          link="https://wsa.wallet.airpay.co.id/qr/00cab93b1216418eb555"
         />
         <TheCardGift
           title="ShopeePay"
           name="Dafara Wiyogo Pangestu"
           image="/qr/shopeedafa.jpg"
           rek="08974144611"
+          link="https://wsa.wallet.airpay.co.id/qr/000b33c0d83ea7bdacac"
         />
 
         <!-- <div class="w-72 h-96 bg-cream rounded-lg">bca</div>
