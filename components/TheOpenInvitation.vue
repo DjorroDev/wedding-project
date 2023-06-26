@@ -54,7 +54,7 @@ const motionInstance = useMotion(target, {
   <section
     v-if="props.isShow"
     ref="target"
-    class="w-full h-screen bg-center bg-cover bg-[url('https://a.storyblok.com/f/188427/4000x6000/e3b2436420/gallery9.jpg/m/filters:format(webp)')] z-50"
+    class="w-full h-screen bg-center bg-cover bg-[url('https://a.storyblok.com/f/188427/3381x5063/000ad73110/gallery15.jpg/m/filters:format(webp)')] z-50"
   >
     <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
       <div class="container px-4 mx-auto max-w-4xl text-center relative">
