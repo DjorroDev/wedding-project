@@ -1,5 +1,5 @@
 <script setup>
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, Timestamp } from "firebase/firestore";
 
 const props = defineProps(["name"]);
 
@@ -14,6 +14,7 @@ const rsvp = reactive({
   name: props.name,
   isHadir: null,
   jumlahTamu: 1,
+  timestamp: null,
 });
 
 const submitHandler = async () => {
@@ -39,10 +40,12 @@ const submitHandler = async () => {
     return;
   }
 
+  rsvp.timestamp = Timestamp.fromDate(new Date());
+
   await addDoc(collection($firestore, "rsvp"), rsvp).then((res) => {
     isLoading.value = false;
     isOpen.value = true;
-    console.log(res);
+    // console.log(res);
   });
 };
 </script>
