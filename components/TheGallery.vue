@@ -8,9 +8,9 @@ const galleries = [
   "https://a.storyblok.com/f/188427/3376x5064/e91c23b510/gallery4.jpg",
   "https://a.storyblok.com/f/188427/4000x6000/cf85ee13bb/gallery5.jpg",
   "https://a.storyblok.com/f/188427/4000x6000/16af063ecf/gallery6.jpg",
-  "https://a.storyblok.com/f/188427/3961x5941/4736f78301/gallery7.jpg",
   "https://a.storyblok.com/f/188427/4000x6000/be6088c958/gallery8.jpg",
   "https://a.storyblok.com/f/188427/4000x6000/e3b2436420/gallery9.jpg",
+  "https://a.storyblok.com/f/188427/3983x5974/81263141d9/gallery16.jpg",
 ];
 
 const setThumbsSwiper = (swiper) => {
