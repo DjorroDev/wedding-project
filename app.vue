@@ -102,7 +102,7 @@ useHead({
           >
             <p class="">Dafara Wiyogo Pangestu</p>
             <p class="font-heading text-4xl">&</p>
-            <p class="">Michele Simadirja</p>
+            <p class="">Michelle Simadirja</p>
           </div>
           <h3 class="text-3xl mt-5 font-script text-[#f1d6ab] font-bold">Sabtu, 08 Juli 2023</h3>
         </div>
