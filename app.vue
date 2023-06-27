@@ -192,7 +192,7 @@ useHead({
         v-motion-custom
         class="flex flex-col items-center justify-centercontainer mx-auto text-center"
       >
-        <h2 class="text-6xl font-script">Countdown To our happy day</h2>
+        <h2 class="text-6xl font-script">Countdown to our happy day</h2>
         <TheCountdown />
         <h3 v-motion-custom class="text-4xl mb-12 mt-2 font-script">Sabtu, 08 Juli 2023</h3>
         <!-- <h2 v-motion-custom class="text-6xl font-script">Acara</h2> -->
