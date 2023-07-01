@@ -5,6 +5,7 @@ defineProps({
   rek: String,
   image: String,
   link: String,
+  confirmWa: String,
 });
 
 const handleCopy = (rek) => {
@@ -31,7 +32,7 @@ const handleCopy = (rek) => {
       </button>
       <a
         class="inline-flex mt-2 gap-1 justify-center rounded-md border font-heading font-bold border-transparent bg-light shadow px-4 py-2 text-sm font-mediu active:bg-[#e9c893] focus:outline-none"
-        href="https://wa.me/6285156451617"
+        :href="`https://wa.me/${confirmWa}`"
         target="_blank"
         >Konfirmasi WA <Icon size="1.3em" name="material-symbols:perm-phone-msg-outline-rounded" />
       </a>
